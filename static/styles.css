@@ -1,0 +1,290 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: url("leaves.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffc107;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero-image {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.text{
+  font-size: 1.3rem;
+  color: #fff;
+
+}
+
+.overlay button {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.overlay button:hover {
+    background: linear-gradient(270deg, #bb6808, #6ebb00, #04629f);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.hidden {
+  display: none;
+}
+
+.test-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#preview-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border: 4px solid #333;
+  border-radius: 10px;
+}
+
+#image-input {
+  display: none;
+}
+
+.image-container label {
+  background-color: #ffc107;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.image-container label:hover {
+    background: linear-gradient(270deg, #bb6808, #6ebb00, #04629f);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#preview-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border: 4px solid #333;
+  border-radius: 10px;
+}
+
+#result-container {
+  margin-top: 30px;
+}
+
+#result-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  color: #46005b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .overlay h1 {
+      font-size: 2rem;
+  }
+
+  .overlay p {
+      font-size: 1rem;
+  }
+
+  .overlay button {
+      font-size: 1rem;
+  }
+}
+
+/*About Section */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.about-container ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.about-container ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.about-container ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.about-container ul li a:hover {
+  color: #ffc107;
+}

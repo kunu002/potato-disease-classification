@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo.jpg') }}" alt="User Icon">
+                <span>Kunu02 </span>
+            </div>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <h1>About the Creator</h1>
+            <p>This Potato Disease Classification Application was created by Kunal Sapkal.</p>
+            <p>Connect with the creator:</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/kunal-sapkal-sept2002" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/kunu002" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
