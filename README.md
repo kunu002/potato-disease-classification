@@ -1,1 +1,1 @@
-<b>Potato Plant DIsease Classification</b>
+<h1>Potato Plant DIsease Classification</h1>
